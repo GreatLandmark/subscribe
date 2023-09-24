@@ -1,8 +1,10 @@
 #!/bin/bash
 
+proj_list="v2ray"
+
 dir_root = `pwd`
 # prepare files
-for proj in [v2ray]
+for proj in $proj_list
 do
     cd $dir_root/$proj
     bash *.sh
@@ -20,7 +22,7 @@ fi
 
 git add . 
 # echo "commit-msg: $commit_msg"
-git commit -m "$commit_msg"
-git push --all
+git commit -m "[auto] $commit_msg"
+# git push --all
 
 echo "done : $0"
