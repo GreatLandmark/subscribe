@@ -1,5 +1,5 @@
 # subscribe
 for Subscribe
 
-remove all
+remove all  
 rm -rf *
