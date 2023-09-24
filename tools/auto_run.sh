@@ -6,6 +6,7 @@ for proj in [v2ray]
 do
     cd $dir_root/$proj
     bash *.sh
+    cd -
 done
 
 # for git commit
@@ -19,7 +20,7 @@ fi
 
 git add . 
 # echo "commit-msg: $commit_msg"
-git commit -m $commit_msg
+git commit -m "$commit_msg"
 git push --all
 
 echo "done : $0"
